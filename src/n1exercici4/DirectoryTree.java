@@ -79,6 +79,7 @@ public class DirectoryTree {
 				
 				System.out.println("Opción incorrecta: debes introducir un número.");
 				sc.nextLine();
+				
 			} 
 			
 		
@@ -107,6 +108,7 @@ public class DirectoryTree {
 					 
 					 System.out.println(f.getAbsolutePath() + " (F) - Última modificación: " + milliToDate.format(milli));
 					 outTxt.write(f.getAbsolutePath() + " (F) - Última modificación: " + milliToDate.format(milli) + "\n");
+				 
 				 }
 				 
 			 } catch (NullPointerException | IOException e) {
@@ -135,6 +137,7 @@ public class DirectoryTree {
 				System.out.println(stringLine);
 				
 			}
+			
 			System.out.println("\nArchivo leído con éxito.");
 			
 		} catch (IOException e) {

@@ -64,7 +64,6 @@ public class DirectoryTree {
 						System.out.println("Introduce ruta del archivo a leer:");
 						pathToFile = sc.nextLine();
 						readFile(pathToFile);  // Método para leer archivos. 
-						System.out.println("Archivo leído con éxito.\n");
 						
 						break;
 						
@@ -136,12 +135,11 @@ public class DirectoryTree {
 				System.out.println(stringLine);
 				
 			}
-			
-			System.out.println("\n");
+			System.out.println("\nArchivo leído con éxito.");
 			
 		} catch (IOException e) {
 			
-			System.out.println("Archivo no encontrado.\n");
+			System.out.println("\nArchivo no encontrado.");
 			
 		} finally {
 			
